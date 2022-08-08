@@ -1,5 +1,4 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+FROM debian 
 
 RUN apt -qq -y update && \
     apt -qq -y install icecast2 ffmpeg nginx && \
