@@ -15,3 +15,4 @@ s6-setuidgid icecast2
 #ls /etc/init.d
 
 icecast2 -c /etc/icecast2/icecast.xml
+darkice -c /root/darkice.cfg
