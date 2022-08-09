@@ -142,6 +142,7 @@
 		</http-headers>
 	</mount>
 	-->
+	<!--
 	<mount type="normal">
 		<mount-name>/mystream.mp3</mount-name>
 
@@ -150,7 +151,8 @@
 		<burst-size>65536</burst-size>
 		<hidden>0</hidden>
 		<public>1</public>
-	</mount> 
+	</mount>
+	-->
 	<!--
 	<mount type="normal">
 		<mount-name>/funny.ogg</mount-name>

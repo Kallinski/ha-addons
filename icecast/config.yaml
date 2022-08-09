@@ -3,6 +3,7 @@ description: "An icecast2 server with ffmpeg streams hosted"
 url: "http://github.com/Kallinski/ha-addons/icecast"
 version: "0.1.0"
 slug: "icecast"
+audio: true
 init: false
 arch:
   - aarch64
