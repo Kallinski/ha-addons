@@ -3,7 +3,8 @@ FROM $BUILD_FROM
 
 RUN apk add --no-cache icecast darkice
 
-COPY darkice.cfg /root/
+COPY darkice.cfg /
+RUN chown icecast /darkice.cfg
 
 # Copy data for add-on
 COPY run.sh /

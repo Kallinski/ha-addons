@@ -1,11 +1,9 @@
 #!/usr/bin/with-contenv bashio
 
-which icecast
-
-cat /etc/icecast.xml
+ls -la /darkice.cfg
 
 echo "Starting icecast service"
 icecast -b -c /etc/icecast.xml 
 
 echo "Starting darkice service"
-darkice -c /root/darkice.cfg
+darkice -c /darkice.cfg
