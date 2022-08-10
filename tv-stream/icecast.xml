@@ -163,7 +163,7 @@
 		<hidden>0</hidden>
 		<public>1</public>
 	</mount>
-    -->
+        -->
 	<!--
 	<mount type="normal">
 		<mount-name>/funny.aac</mount-name>
@@ -174,7 +174,7 @@
 		<hidden>0</hidden>
 		<public>1</public>
 	</mount>
-    -->
+        -->
 	<!-- Normal mounts -->
 	<!--
 	<mount type="normal">
@@ -223,13 +223,13 @@
 
 	<paths>
 		<!-- basedir is only used if chroot is enabled -->
-		<basedir>/usr/share/icecast2</basedir>
+		<basedir>/usr/share/icecast</basedir>
 
 		<!-- Note that if <chroot> is turned on below, these paths must both
 			 be relative to the new root, not the original root -->
-		<logdir>/var/log/icecast2</logdir>
-		<webroot>/usr/share/icecast2/web</webroot>
-		<adminroot>/usr/share/icecast2/admin</adminroot>
+		<logdir>/var/log/icecast</logdir>
+		<webroot>/usr/share/icecast/web</webroot>
+		<adminroot>/usr/share/icecast/admin</adminroot>
 		<!-- <pidfile>/usr/share/icecast/icecast.pid</pidfile> -->
 
 		<!-- Aliases: treat requests for 'source' path as being for 'dest' path
