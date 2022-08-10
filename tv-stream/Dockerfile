@@ -3,6 +3,9 @@ FROM $BUILD_FROM
 
 RUN apk add --no-cache icecast darkice
 
+COPY icecast.xml /etc/icecast.xml
+RUN chown icecast /etc/icecast.xml
+
 COPY darkice.cfg /
 RUN chown icecast /darkice.cfg
 
