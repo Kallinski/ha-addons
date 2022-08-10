@@ -1,13 +1,13 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-RUN apk add --no-cache icecast darkice
+RUN apk add --no-cache icecast ices
 
 COPY icecast.xml /etc/icecast.xml
 RUN chown icecast /etc/icecast.xml
 
-COPY darkice.cfg /
-RUN chown icecast /darkice.cfg
+COPY ices-alsa.xml /
+RUN chown icecast /ices-alsa.xml
 
 # Copy data for add-on
 COPY run.sh /
