@@ -3,8 +3,8 @@ FROM $BUILD_FROM
 
 RUN apk add --no-cache icecast darkice
 
-COPY icecast.xml /root/
-RUN chmod 777 /root/icecast.xml
+#COPY icecast.xml /root/
+#RUN chmod 777 /root/icecast.xml
 #RUN chown -R icecast /etc/icecast
 #RUN mkdir -p /var/log/icecast && \
 #    chown -R icecast /var/log/icecast && \

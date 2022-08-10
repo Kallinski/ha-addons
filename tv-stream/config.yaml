@@ -1,7 +1,7 @@
 name: "TV-Stream"
 description: "TV-Stream Add-On Test"
 url: "http://github.com/Kallinski/ha-addons/tv-stream"
-version: "0.1.8"
+version: "0.1.9"
 slug: "tv_stream_bla"
 audio: true
 init: false
