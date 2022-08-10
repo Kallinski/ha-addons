@@ -9,7 +9,7 @@ RUN chown icecast /etc/icecast.xml
 COPY ices-alsa.xml /
 RUN chown icecast /ices-alsa.xml
 
-RUN chown -R icecast /var/log/ices
+RUN chown icecast /var/log/ices/ices.log
 
 # Copy data for add-on
 COPY run.sh /
