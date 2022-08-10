@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-RUN apk add --no-cache pulseaudio pulseaudio-alsa pulseaudio-utils icecast ices
+RUN apk add --no-cache pulseaudio pulseaudio-alsa pulseaudio-utils alsa-utils icecast ices
 
 RUN aplay -l
 
