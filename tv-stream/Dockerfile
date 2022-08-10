@@ -14,5 +14,8 @@ COPY darkice.cfg /root/
 COPY run.sh /
 RUN chmod a+x /run.sh
 
+RUN adduser -S streamer
+USER streamer
+
 CMD [ "/run.sh" ]
 
