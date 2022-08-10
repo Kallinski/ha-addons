@@ -14,5 +14,9 @@ s6-setuidgid icecast2
 #echo /etc/init.d
 #ls /etc/init.d
 
-icecast2 -c /etc/icecast2/icecast.xml
+echo "Starting icecast2 service"
+#icecast2 -c /etc/icecast2/icecast.xml
+service icecast2 start
+
+echo "Starting darkice service"
 darkice -c /root/darkice.cfg
