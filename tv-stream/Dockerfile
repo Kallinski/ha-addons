@@ -3,9 +3,6 @@ FROM $BUILD_FROM
 
 RUN apk add --no-cache pulseaudio pulseaudio-alsa pulseaudio-utils alsa-utils icecast ices
 
-RUN aplay -l
-
-COPY icecast.xml /etc/icecast.xml
 RUN chown icecast /etc/icecast.xml
 
 COPY ices-alsa.xml /
