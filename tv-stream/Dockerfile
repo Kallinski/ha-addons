@@ -11,15 +11,13 @@ RUN apk add --no-cache icecast darkice
 #    chown -R streamer /usr/share/icecast
 COPY darkice.cfg /root/
 
-RUN cat /etc/icecast.xml
 RUN ls -la /usr/share/icecast
 
 # Copy data for add-on
 COPY run.sh /
 RUN chmod a+x /run.sh
 
-RUN adduser -S streamer
-USER streamer
+USER icecast 
 
 CMD [ "/run.sh" ]
 
