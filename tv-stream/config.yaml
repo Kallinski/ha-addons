@@ -1,0 +1,16 @@
+name: "TV-Stream"
+description: "TV-Stream Add-On Test"
+url: "http://github.com/Kallinski/ha-addons/tv-stream"
+version: "0.1.0"
+slug: "tv_stream_bla"
+audio: true
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+panel_icon: mdi:radio
+ports:
+  8000/tcp: 8000
