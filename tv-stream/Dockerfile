@@ -4,10 +4,11 @@ FROM $BUILD_FROM
 RUN apk add --no-cache icecast darkice
 
 COPY icecast.xml /root/
-#RUN chown -R icecast2 /etc/icecast2
-#RUN mkdir -p /var/log/icecast2 && \
-#    chown -R icecast2 /var/log/icecast2 && \
-#    chown -R icecast2 /usr/share/icecast2
+RUN chmod 777 /root/icecast.xml
+RUN chown -R icecast /etc/icecast
+RUN mkdir -p /var/log/icecast && \
+    chown -R icecast /var/log/icecast && \
+    chown -R icecast /usr/share/icecast
 COPY darkice.cfg /root/
 
 # Copy data for add-on
