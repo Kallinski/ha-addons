@@ -1,14 +1,13 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-RUN apk add --no-cache pulseaudio pulseaudio-alsa pulseaudio-utils alsa-utils alsa-plugins-pulse icecast ices
+RUN apk add --no-cache pulseaudio pulseaudio-alsa pulseaudio-utils alsa-utils alsa-plugins-pulse icecast darkice 
 
-RUN chown icecast /etc/icecast.xml
+COPY icecast.xml /
+RUN chown icecast /icecast.xml
 
-COPY ices-alsa.xml /
-RUN chown icecast /ices-alsa.xml
-
-RUN mkdir -p /var/log/ices && chown -R icecast /var/log/ices
+COPY darkice.cfg /
+RUN chown icecast /darkice.cfg
 
 # Copy data for add-on
 COPY run.sh /
